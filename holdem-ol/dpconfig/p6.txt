@@ -1,0 +1,15 @@
+export PYTHONPATH=$PWD/..:$PYTHONPATH
+export WIN_RATE_RPC_URI="127.0.0.1:8989"
+export PYTHONWARNINGS="ignore::DeprecationWarning"
+export RAY_memory_monitor_refresh_ms=0
+
+nohup python deploy/server.py --model_name dqn --port 10601 --model_path=chaos/p6/p6_slimganv2_model_20100.pth      --argmax_action=True > evlog/p6_slimganv2_model_20100.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10602 --model_path=chaos/p6/opp_p6_slimganv2_model_18500.pth  --argmax_action=True > evlog/opp_p6_slimganv2_model_18500.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10603 --model_path=chaos/p6/p6_slimganv2_model_21444.pth      --argmax_action=True > evlog/p6_slimganv2_model_21444.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10604 --model_path=chaos/p6/p6_slimganv2_model_22273.pth      --argmax_action=True > evlog/p6_slimganv2_model_22273.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10605 --model_path=chaos/p6/p6_slimganv2_model_15200.pth      --argmax_action=True > evlog/p6_slimganv2_model_15200.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10606 --model_path=chaos/p6/p6_slimganv2_model_22300.pth      --argmax_action=True > evlog/p6_slimganv2_model_22300.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10607 --model_path=chaos/p6/p6_slimganv2_model_13200.pth      --argmax_action=True > evlog/p6_slimganv2_model_13200.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10608 --model_path=chaos/p6/p6_slimganv2_model_19300.pth      --argmax_action=True > evlog/p6_slimganv2_model_19300.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10609 --model_path=chaos/p6/opp_p6_slimganv2_model_15700.pth  --argmax_action=True > evlog/opp_p6_slimganv2_model_15700.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10610 --model_path=chaos/p6/p6_slimganv2_model_19826.pth      --argmax_action=True > evlog/p6_slimganv2_model_19826.log     2>&1 &

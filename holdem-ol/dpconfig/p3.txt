@@ -1,0 +1,15 @@
+export PYTHONPATH=$PWD/..:$PYTHONPATH
+export WIN_RATE_RPC_URI="127.0.0.1:8989"
+export PYTHONWARNINGS="ignore::DeprecationWarning"
+export RAY_memory_monitor_refresh_ms=0
+
+nohup python deploy/server.py --model_name dqn --port 10301 --model_path=chaos/p3/p3_slimganv2_model_20288.pth --argmax_action=True > evlog/p3_slimganv2_model_20288.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10302 --model_path=chaos/p3/p3_slimganv2_model_17500.pth --argmax_action=True > evlog/p3_slimganv2_model_17500.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10303 --model_path=chaos/p3/p3_slimganv2_model_16899.pth --argmax_action=True > evlog/p3_slimganv2_model_16899.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10304 --model_path=chaos/p3/p3_slimganv2_model_20300.pth --argmax_action=True > evlog/p3_slimganv2_model_20300.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10305 --model_path=chaos/p3/p3_slimganv2_model_16900.pth --argmax_action=True > evlog/p3_slimganv2_model_16900.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10306 --model_path=chaos/p3/p3_slimganv2_model_20100.pth --argmax_action=True > evlog/p3_slimganv2_model_20100.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10307 --model_path=chaos/p3/p3_slimganv2_model_18900.pth --argmax_action=True > evlog/p3_slimganv2_model_18900.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10308 --model_path=chaos/p3/p3_slimganv2_model_19200.pth --argmax_action=True > evlog/p3_slimganv2_model_19200.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10309 --model_path=chaos/p3/p3_slimganv2_model_19196.pth --argmax_action=True > evlog/p3_slimganv2_model_19196.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10310 --model_path=chaos/p3/p3_slimganv2_model_20030.pth --argmax_action=True > evlog/p3_slimganv2_model_20030.log 2>&1 &

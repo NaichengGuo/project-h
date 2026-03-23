@@ -1,0 +1,119 @@
+{
+  "model_infos": [
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [2],
+      "models": [
+        {"addr": "http://127.0.0.1:10201/invocations", "weight": 44011},
+        {"addr": "http://127.0.0.1:10202/invocations", "weight": 25497},
+        {"addr": "http://127.0.0.1:10203/invocations", "weight": 24164},
+        {"addr": "http://127.0.0.1:10204/invocations", "weight": 18131},
+        {"addr": "http://127.0.0.1:10205/invocations", "weight": 15939},
+        {"addr": "http://127.0.0.1:10206/invocations", "weight": 12219}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [3],
+      "models": [
+        {"addr": "http://127.0.0.1:10301/invocations", "weight": 21536},
+        {"addr": "http://127.0.0.1:10302/invocations", "weight": 21113},
+        {"addr": "http://127.0.0.1:10303/invocations", "weight": 15993},
+        {"addr": "http://127.0.0.1:10304/invocations", "weight": 16111},
+        {"addr": "http://127.0.0.1:10305/invocations", "weight": 14183},
+        {"addr": "http://127.0.0.1:10306/invocations", "weight": 13896},
+        {"addr": "http://127.0.0.1:10307/invocations", "weight": 10412},
+        {"addr": "http://127.0.0.1:10308/invocations", "weight": 10509},
+        {"addr": "http://127.0.0.1:10309/invocations", "weight": 3693},
+        {"addr": "http://127.0.0.1:10310/invocations", "weight": 1806}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [4],
+      "models": [
+        {"addr": "http://127.0.0.1:10401/invocations", "weight": 37835},
+        {"addr": "http://127.0.0.1:10402/invocations", "weight": 36368},
+        {"addr": "http://127.0.0.1:10403/invocations", "weight": 31184},
+        {"addr": "http://127.0.0.1:10404/invocations", "weight": 17316},
+        {"addr": "http://127.0.0.1:10405/invocations", "weight": 1376},
+        {"addr": "http://127.0.0.1:10406/invocations", "weight": 373}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [5],
+      "models": [
+        {"addr": "http://127.0.0.1:10501/invocations", "weight": 20259},
+        {"addr": "http://127.0.0.1:10502/invocations", "weight": 12124},
+        {"addr": "http://127.0.0.1:10503/invocations", "weight": 7690},
+        {"addr": "http://127.0.0.1:10504/invocations", "weight": 6190},
+        {"addr": "http://127.0.0.1:10505/invocations", "weight": 1782},
+        {"addr": "http://127.0.0.1:10506/invocations", "weight": 1484}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [6],
+      "models": [
+        {"addr": "http://127.0.0.1:10601/invocations", "weight":12271},
+        {"addr": "http://127.0.0.1:10602/invocations", "weight":9368},
+        {"addr": "http://127.0.0.1:10603/invocations", "weight":6535},
+        {"addr": "http://127.0.0.1:10604/invocations", "weight":4786},
+        {"addr": "http://127.0.0.1:10605/invocations", "weight":3973},
+        {"addr": "http://127.0.0.1:10606/invocations", "weight":3587},
+        {"addr": "http://127.0.0.1:10607/invocations", "weight":3083},
+        {"addr": "http://127.0.0.1:10608/invocations", "weight":2599},
+        {"addr": "http://127.0.0.1:10609/invocations", "weight":2174},
+        {"addr": "http://127.0.0.1:10610/invocations", "weight":1891}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [7],
+      "models": [
+        {"addr": "http://127.0.0.1:10701/invocations", "weight":19893},
+        {"addr": "http://127.0.0.1:10702/invocations", "weight":18944},
+        {"addr": "http://127.0.0.1:10703/invocations", "weight":17638},
+        {"addr": "http://127.0.0.1:10704/invocations", "weight":13165},
+        {"addr": "http://127.0.0.1:10705/invocations", "weight":7351},
+        {"addr": "http://127.0.0.1:10706/invocations", "weight":7310},
+        {"addr": "http://127.0.0.1:10707/invocations", "weight":6355},
+        {"addr": "http://127.0.0.1:10708/invocations", "weight":5759},
+        {"addr": "http://127.0.0.1:10709/invocations", "weight":5350},
+        {"addr": "http://127.0.0.1:10710/invocations", "weight":5003},
+        {"addr": "http://127.0.0.1:10711/invocations", "weight":3284},
+        {"addr": "http://127.0.0.1:10712/invocations", "weight":2641},
+        {"addr": "http://127.0.0.1:10713/invocations", "weight":1972},
+        {"addr": "http://127.0.0.1:10714/invocations", "weight":1527},
+        {"addr": "http://127.0.0.1:10715/invocations", "weight":1186}
+      ]
+    },
+    {
+      "levels": [0, 1, 2],
+      "player_nums": [8],
+      "models": [
+        {"addr": "http://127.0.0.1:10801/invocations", "weight":12730},
+        {"addr": "http://127.0.0.1:10802/invocations", "weight":11861},
+        {"addr": "http://127.0.0.1:10803/invocations", "weight":10222},
+        {"addr": "http://127.0.0.1:10804/invocations", "weight":5742},
+        {"addr": "http://127.0.0.1:10805/invocations", "weight":5832},
+        {"addr": "http://127.0.0.1:10806/invocations", "weight":4474},
+        {"addr": "http://127.0.0.1:10807/invocations", "weight":3250},
+        {"addr": "http://127.0.0.1:10808/invocations", "weight":3139},
+        {"addr": "http://127.0.0.1:10809/invocations", "weight":2649},
+        {"addr": "http://127.0.0.1:10810/invocations", "weight":2400},
+        {"addr": "http://127.0.0.1:10811/invocations", "weight":2405},
+        {"addr": "http://127.0.0.1:10812/invocations", "weight":1203},
+        {"addr": "http://127.0.0.1:10813/invocations", "weight":1029}
+      ]
+    }
+  ],
+  "mysql": {
+    "user": "",
+    "password": "",
+    "proto": "tcp",
+    "host": "127.0.0.1:3306",
+    "schema": "holdem"
+  }
+}

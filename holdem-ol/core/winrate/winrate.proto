@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "xsyphon.com/holdem/api/pb";
+
+// rank 2 3 4 5 6 7 8 9 T J Q K A
+// suit 0 1 2 3
+// 牌的编码以上面顺序进行编码
+// ♠2 ♥2 ♣2 ♦2 ♠3 ♥3 ♣3 ♦3 ... ♠A ♥A ♣A ♦A
+// 对应0-51
+
+message RateRequest {
+  // 牌列表：长度最低为2，最高为7
+  // 前两张为手牌，后面的为公共牌
+  bytes packets = 1;
+}
+
+message RateResponse {
+  // 胜率
+  float rate = 1;
+}
+
+message BatchRateRequest {
+  repeated bytes packets = 1;
+}
+
+message BatchRateResponse {
+  repeated float rates = 1;
+}
+
+service WinRateService {
+  rpc GetRate(RateRequest) returns (RateResponse);
+  rpc BatchGetRate(BatchRateRequest) returns (BatchRateResponse);
+
+  rpc ShortGetRate(RateRequest) returns (RateResponse);
+  rpc ShortBatchGetRate(BatchRateRequest) returns (BatchRateResponse);
+}

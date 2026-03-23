@@ -1,0 +1,11 @@
+export PYTHONPATH=$PWD/..:$PYTHONPATH
+export WIN_RATE_RPC_URI="127.0.0.1:8989"
+export PYTHONWARNINGS="ignore::DeprecationWarning"
+export RAY_memory_monitor_refresh_ms=0
+
+nohup python deploy/server.py --model_name dqn --port 10501 --model_path=chaos/p5/opp_p5_slimganv2_model_11400.pth --argmax_action=True > evlog/opp_p5_slimganv2_model_11400.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10502 --model_path=chaos/p5/opp_p5_slimganv2_model_12800.pth --argmax_action=True > evlog/opp_p5_slimganv2_model_12800.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10503 --model_path=chaos/p5/old_p5_slimganv2_model_14568.pth --argmax_action=True > evlog/old_p5_slimganv2_model_14568.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10504 --model_path=chaos/p5/old_p5_slimganv2_model_14700.pth --argmax_action=True > evlog/old_p5_slimganv2_model_14700.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10505 --model_path=chaos/p5/p5_slimganv2_model_11900.pth.    --argmax_action=True > evlog/p5_slimganv2_model_11900.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10505 --model_path=chaos/p5/opp_p5_slimganv2_model_12000.pth --argmax_action=True > evlog/opp_p5_slimganv2_model_12000.log 2>&1 &

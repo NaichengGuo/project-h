@@ -1,0 +1,18 @@
+export PYTHONPATH=$PWD/..:$PYTHONPATH
+export WIN_RATE_RPC_URI="127.0.0.1:8989"
+export PYTHONWARNINGS="ignore::DeprecationWarning"
+export RAY_memory_monitor_refresh_ms=0
+
+nohup python deploy/server.py --model_name dqn --port 10801 --model_path=chaos/p8/p8_slimganv2_model_8800.pth      --argmax_action=True > evlog/p8_slimganv2_model_8800.log      2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10802 --model_path=chaos/p8/opp_p8_slimganv2_model_17600.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_17600.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10803 --model_path=chaos/p8/opp_p8_slimganv2_model_18400.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_18400.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10804 --model_path=chaos/p8/p8_slimganv2_model_9168.pth      --argmax_action=True > evlog/p8_slimganv2_model_9168.log      2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10805 --model_path=chaos/p8/opp_p8_slimganv2_model_17800.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_17800.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10806 --model_path=chaos/p8/p8_slimganv2_model_6500.pth      --argmax_action=True > evlog/p8_slimganv2_model_6500.log      2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10807 --model_path=chaos/p8/opp_p8_slimganv2_model_15600.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_15600.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10808 --model_path=chaos/p8/opp_p8_slimganv2_model_15100.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_15100.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10809 --model_path=chaos/p8/opp_p8_slimganv2_model_15800.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_15800.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10810 --model_path=chaos/p8/opp_p8_slimganv2_model_16100.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_16100.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10811 --model_path=chaos/p8/p8_slimganv2_model_16200.pth     --argmax_action=True > evlog/p8_slimganv2_model_16200.log     2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10812 --model_path=chaos/p8/opp_p8_slimganv2_model_18000.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_18000.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10813 --model_path=chaos/p8/opp_p8_slimganv2_model_18100.pth --argmax_action=True > evlog/opp_p8_slimganv2_model_18100.log 2>&1 &

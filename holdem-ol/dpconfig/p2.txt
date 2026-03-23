@@ -1,0 +1,19 @@
+export PYTHONPATH=$PWD/..:$PYTHONPATH
+export WIN_RATE_RPC_URI="127.0.0.1:8989"
+export PYTHONWARNINGS="ignore::DeprecationWarning"
+export RAY_memory_monitor_refresh_ms=0
+
+nohup python deploy/server.py --model_name dqn --port 10201 --model_path=chaos/p2/p2_slimv2_model_21584.pth        --argmax_action=True > evlog/p2_slimv2_model_21584.log        2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10202 --model_path=chaos/p2/p2_slimv2_model_21600.pth        --argmax_action=True > evlog/p2_slimv2_model_21600.log        2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10203 --model_path=chaos/p2/old_p2_slimganv2_model_24500.pth --argmax_action=True > evlog/old_p2_slimganv2_model_24500.log 2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10204 --model_path=chaos/p2/p2_slimv2_model_21300.pth        --argmax_action=True > evlog/p2_slimv2_model_21300.log        2>&1 &
+nohup python deploy/server.py --model_name dqn --port 10204 --model_path=chaos/p2/old_p2_slimganv2_model_24455.pth --argmax_action=True > evlog/old_p2_slimganv2_model_24455.log 2>&1 &
+
+python deploy/server.py --model_name dqn --port 10202 --model_path=output/training_model/p2/slimganv2/opp_p2_slimganv2_model_101300.pth --argmax_action=True
+
+python deploy/server.py --model_name prob --port 10202
+
+python deploy/server.py --model_name prob_neutral --port 10202
+
+
+python deploy/server.py --model_name ml_strategy --port 10202 --model_path=output/ml-holdem/postflop_infoSets_batch_49.joblib
